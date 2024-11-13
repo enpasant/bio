@@ -1,0 +1,133 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth; /* Habilita scroll suave para navegadores modernos */
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: linear-gradient(to right, #4e54c8, #8f94fb);
+  color: #fff;
+  padding: 0;
+  margin: 0;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 10px 20px;
+}
+
+header .logo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+}
+
+header nav ul li {
+  margin-left: 20px;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1em;
+}
+
+header nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Seções */
+.section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.section p {
+  font-size: 1.2em;
+}
+
+/* Painel de biografia */
+.biography-panel {
+  position: relative;
+}
+
+.bio-card {
+  background: rgba(255, 255, 255, 0.5); /* Transparente com 50% de opacidade */
+  border-radius: 10px;
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 600px;
+  color: #333;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  font-size: 1.1em;
+  line-height: 1.8;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.7);
+  font-size: 0.9em;
+  margin-top: 20px;
+}
+
+/* Estilo para a tag <code> */
+        code {
+            font-family: monospace; /* Fonte monoespaçada */
+            background-color: #2e2e2e; /* Fundo escuro, como terminal */
+            color: #00ff00!important; /* Texto verde claro, como terminais antigos */
+            padding: 2px 4px; /* Pequeno espaçamento para o texto */
+            border-radius: 4px; /* Bordas arredondadas para um visual mais agradável */
+            font-size: 1.1em; /* Tamanho de fonte levemente maior */
+            box-shadow: 0 0 5px rgba(0, 255, 0, 0.6); /* Sombramento verde suave */
+            word-wrap: break-word; /* Quebra de linha para código longo */
+            width: fit-content;
+            position: relative;
+            display: inline-block;
+        }
+
+        /* Estilo adicional para melhorar o visual de múltiplos comandos */
+        pre code {
+            display: block;
+            padding: 10px;
+            margin: 10px 0;
+            background-color: #111; /* Fundo ainda mais escuro */
+            border-radius: 4px;
+            box-shadow: 0 0 10px rgba(0, 255, 0, 0.5); /* Sombramento mais intenso */
+            color: #e0e0e0; /* Texto mais suave para o terminal */
+        }
+
+.pfp{
+  border-radius: 100%;
+  outline-style: dashed;
+  outline-color: beige;
+}
+
+.tiktok{
+  color: white;
+}
+a{
+  text-decoration: none;
+  color: #00ff00;
+}
