@@ -7,40 +7,44 @@
   <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
-  <header>
-    <div class="logo">Bio</div>
-    <nav>
-      <ul>
-        <li><a href="#about">Sobre Mim</a></li>
-        <li><a href="#biography">Biografia</a></li>
-        <li><a href="#knowledge">O Que Eu Sei</a></li>
-        <li><a href="#work">O Que Eu Ja Fiz</a></li>
-      </ul>
-    </nav>
-  </header>
+ <header>
+  <div class="logo">Navegacao</div>
+  <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+  <nav>
+    <ul>
+      <li><h3>Bio</h3></li>
+      <li><a href="#about">Sobre Mim</a></li>
+      <li><a href="#biography">Biografia</a></li>
+      <li><a href="#knowledge">O Que Eu Sei</a></li>
+      <li><a href="#work">O Que Eu Ja Fiz</a></li>
+      <li><a href="#assets">Assets Utilizados</a></li>
+    </ul>
+  </nav>
+</header>
+
+<script>
+function toggleMenu() {
+  const menu = document.querySelector('header nav ul');
+  menu.classList.toggle('active');
+}
+</script>
   
   <main>
     <section id="about" class="section">
       <img src="./images/avatarhd.png" height="128px" class="pfp">
       <h1>Opa!</h1>
       <p>Meu nome (on-line) e Lnokes. </p>
-      <p>Eu tenho bastante conhecimento em ciencias de computacao, e tambem sou outro usuario e entusiasta do Linux.</p>
-      <h6>(tambem sou meio sozinho, apesar de ser bem social)</h6>
+      <p>Eu amo programar, jogar, entre outras coisas.</p>    
+      
     </section>
 
-    <section id="biography" class="section biography-panel">
-      <img src="./images/Basil.gif">
-      <h2>Sobre Mim</h2>
-      <div class="bio-card">
-        <p>
-          Sou um apaixonado por tecnologia, jogos, entre outras coisas. Minha jornada comecou cedo, e ao longo dos anos, desenvolvi habilidades em programacao, design e desenvolvimento web. Este espaco e dedicado a compartilhar um pouco mais sobre minha trajetoria e conquistas.
-        </p>
+    <section id="biography" class="section">
+        <h2>Sobre Mim</h2>
+        <p>Sobre eu, nao tenho muitas coisas a comentar. Sou so aquele programador casual, que faz sites por diversao e sem pressa.</p>
         <p>Eu tambem sou um grande fa de jogos indie, principalmente OMORI.</p>
-      </div>
     </section>
 
     <section id="knowledge" class="section">
-      <img src="./images/Omori.gif">
       <h2>O Que Eu Sei (ate agora)</h2>
       <p>Eu sei ingles fluente, e tambem programar em diversas linguagens de programacao, como;
       </p>
@@ -49,11 +53,18 @@
   </main>
 
   <section id="work" class="section">
-    <img src="./images/Aubrey.gif">
     <h2>O Que Eu Ja Fiz</h2>
     <p> Ja trabalhei em diversos sites, como o <code><a href="https://archguide.netlify.app">ArchGuide</a></code>, o <code><a href="https://devec0.github.io/MineShare/index.html">MineShare</a></code>, e o <code><a href="https://devec0.github.io/Hub/index.html">Ec0Hub</a></code>.
-      
     </p>
+  </section>
+    <section id="assets" class="section">
+        <h2>Assets Utilizados</h2>
+        <p>Os assets que eu utilizei sao:</p>
+      <ul>
+        <li><p>Headspace Background(editado) - OMORI</p></li>
+        <li><p>OMORI_GAME2.ttf - OMORI</p></li>
+      </ul>
+      </section>
     <footer>
       <h2>Redes Sociais:</h2>
         <div class="social-buttons">
@@ -69,7 +80,6 @@
     </a>
         </div>
     </footer>
-  </section>
   <script src="./scripts/smoothscroll.js"></script>
 </body>
 </html>
