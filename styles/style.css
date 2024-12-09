@@ -21,13 +21,12 @@ body {
     color: #fff;
   padding: 0;
   margin: 0;
-  animation: fadeIn 0.5s ease-in-out forwards;
+  animation: fadeIn 0.4s ease-in-out forwards;
 }
 
 @keyframes fadeIn {
       from {
           opacity: 0;
-          transform: scale(0.8, 0.8);
       }
       to {
         opacity: 1;
@@ -163,28 +162,14 @@ footer {
 
 /* Estilo para a tag <code> */
         code {
-            font-family: monospace; /* Fonte monoespaçada */
-            background-color: #2e2e2e; /* Fundo escuro, como terminal */
-            color: #00ff00!important; /* Texto verde claro, como terminais antigos */
-            padding: 2px 4px; /* Pequeno espaçamento para o texto */
-            border-radius: 4px; /* Bordas arredondadas para um visual mais agradável */
-            font-size: 1.1em; /* Tamanho de fonte levemente maior */
-            box-shadow: 0 0 5px rgba(0, 255, 0, 0.6); /* Sombramento verde suave */
-            word-wrap: break-word; /* Quebra de linha para código longo */
-            width: fit-content;
-            position: relative;
-            display: inline-block;
+            padding: 5px;
+            border-radius: 50px;
+            background-color: rgba(0,0,0,0.5)
         }
 
         /* Estilo adicional para melhorar o visual de múltiplos comandos */
         pre code {
-            display: block;
-            padding: 10px;
-            margin: 10px 0;
-            background-color: #111; /* Fundo ainda mais escuro */
-            border-radius: 4px;
-            box-shadow: 0 0 10px rgba(0, 255, 0, 0.5); /* Sombramento mais intenso */
-            color: #e0e0e0; /* Texto mais suave para o terminal */
+            
         }
 
 .pfp{
