@@ -1,252 +1,79 @@
-@font-face {
-    font-family: 'Andy';
-    src: url('../images/ANDYB.TTF') format('opentype');
+/* Universal Selector */
+*{
+  color: #fff;
 }
 
-/* Reset básico */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+html{
+  scroll-behavior: smooth;
 }
 
-html {
-  scroll-behavior: smooth; /* Habilita scroll suave para navegadores modernos */
-}
-
+/* Elements */
 body {
-  font-family: 'Andy', sans-serif;
-  line-height: 1.6;
-    background-image: url("../images/background.png");
-    color: #fff;
-  padding: 0;
-  margin: 0;
-  animation: fadeIn 0.4s ease-in-out forwards;
-}
-
-@keyframes fadeIn {
-      from {
-          opacity: 0;
-      }
-      to {
-        opacity: 1;
-      }
-    }
-/* Header */
-header {
-    display: flex;
-    height: fit-content;
-  justify-content: space-between;
-  align-items: center;
-    background: rgba(255, 255, 255, 0.2); /* Fundo semi-transparente */
-  border-radius: 15px; /* Bordas arredondadas */
-  backdrop-filter: blur(10px); /* Desfoque para o efeito de vidro */
-  -webkit-backdrop-filter: blur(10px); /* Compatibilidade com navegadores baseados em WebKit */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
-  padding: 20px;
-  color: #fff; /* Cor do texto */
-  position: sticky;  
-  z-index: 9999;  
-}
-
-header .logo {
-  font-size: 1.5em;
-  font-weight: bold;
-  text-align: center;  
-}
-
-/* Menu Responsivo */
-header nav ul {
-  display: flex;
-  list-style: none;
-  flex-wrap: wrap;
-}
-
-header nav ul li {
-  margin-left: 20px;
-}
-
-@media (max-width: 768px) {
-  header {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-header nav ul {
-  display: flex;
-  list-style: none;
-  flex-wrap: wrap;
-  flex-direction: row; /* Por padrão, exibe os itens em linha */
-  max-height: 0; /* Altura inicial zero */
-  overflow: hidden; /* Esconde o conteúdo que ultrapassa a altura */
-  opacity: 0; /* Torna invisível */
-  transition: max-height 0.8s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.8s ease-in-out;
-}
-
-header nav ul.active {
-  max-height: 300px; /* Altura suficiente para os itens do menu */
-  opacity: 1; /* Torna visível */
-  flex-direction: column; /* Exibe os itens em coluna */
-}
-
-  header nav ul li {
-    margin: 10px 0;
-  }
-}
-
-/* Ícone do menu */
-.menu-toggle {
-  display: none;
-  cursor: pointer;
-  font-size: 1.5em;
-  color: #fff;
-}
-
-@media (max-width: 768px) {
-  .menu-toggle {
-    display: block;
-  }
-}
-header nav ul li a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 1em;
-}
-
-header nav ul li a:hover {
-  text-decoration: underline;
-}
-
-/* Seções */
-.section {
-  padding: 60px 20px;
+  height: 100vh;
+  width: auto;
   text-align: center;
-}
-
-.section h2 {
-  font-size: 2em;
-  margin-bottom: 20px;
-}
-
-.section p {
-  font-size: 1.2em;
-}
-
-/* Painel de biografia */
-.biography-panel {
-  position: relative;
-}
-
-.bio-card {
-  background: rgba(255, 255, 255, 0.5); /* Transparente com 50% de opacidade */
-  border-radius: 10px;
+  margin: 40px;
   padding: 20px;
-  margin: 0 auto;
-  max-width: 600px;
-  color: #fff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  color: black;
   font-size: 1.1em;
-  line-height: 1.8;
+  font-weight: bold;
+  font-family: 'Arial';
+  background-image: url("../images/background.png");
+  background-size: cover;
+  background-attachment: fixed;
+  animation: popup 0.7s ease-in-out forwards;
 }
 
-/* Footer */
 footer {
-  text-align: center;
   padding: 20px;
-  background: rgba(0, 0, 0, 0.7);
-  font-size: 0.9em;
-  margin: 0 auto;
-  width: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
   border-radius: 25px;
+  width: fit-content;
+  height: fit-content;
+  margin: 0 auto;
 }
 
-/* Estilo para a tag <code> */
-        code {
-            padding: 5px;
-            border-radius: 50px;
-            background-color: rgba(0,0,0,0.5)
-        }
-
-        /* Estilo adicional para melhorar o visual de múltiplos comandos */
-        pre code {
-            
-        }
-
-.pfp{
-  border-radius: 50%;
-  border-color: darkslateblue;  
-  outline-style: dashed;
-  outline-color: rgba(255,255,255,0.2);
-  outline-width: 6px;
-  }
-
-
-a{
+a {
   text-decoration: none;
   color: yellow;
-    transition: transform 0.2s ease-in-out;
 }
 
-a:hover{
-    transform: scale(1.1, 1.1);
-    transition: transform 0.2s ease-in-out;  
-
+img {
+  border-radius: 100%;
 }
-section {
-  background: rgba(255, 255, 255, 0.2); /* Fundo semi-transparente */
-  border-radius: 15px; /* Bordas arredondadas */
-  backdrop-filter: blur(10px); /* Desfoque para o efeito de vidro */
-  -webkit-backdrop-filter: blur(10px); /* Compatibilidade com navegadores baseados em WebKit */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+
+/* Classes */
+.pfp {
+  background: rgba(255, 255, 255, 0.2);    /* Semi-transparent background */
+  border-radius: 15px;                     /* Rounded corners */
+  backdrop-filter: blur(10px);             /* Blur effect */
+  -webkit-backdrop-filter: blur(10px);     /* WebKit compatibility */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Soft shadow */
   padding: 20px;
   margin: 20px;
-  color: #fff; /* Cor do texto */
-    
+  color: #fff;                             /* Text color */
+}
+
+/* IDs */
+#text {
+  background: rgba(255, 255, 255, 0.2);    /* Semi-transparent background */
+  border-radius: 15px;                     /* Rounded corners */
+  backdrop-filter: blur(10px);             /* Blur effect */
+  -webkit-backdrop-filter: blur(10px);     /* WebKit compatibility */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Soft shadow */
+  padding: 20px;
+  margin: 20px;
+  color: #fff;                             /* Text color */
+}
+
+/* Keyframes */
+@keyframes popup {
+  from {
+    transform: scale(0.7);
+    opacity: 0;
   }
-
-h2{
-    color: #fff;
-}
-
-.section > footer > img{
-    height:128px;
-}
-
-section > ul{
-   background: rgba(255, 255, 255, 0.2); /* Fundo semi-transparente */
-  border-radius: 15px; /* Bordas arredondadas */
-  backdrop-filter: blur(10px); /* Desfoque para o efeito de vidro */
-  -webkit-backdrop-filter: blur(10px); /* Compatibilidade com navegadores baseados em WebKit */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
-  padding: 20px;
-  margin: 20px;
-  color: #fff; /* Cor do texto */
-  list-style: none;  
-}
-
-section > ul > li:hover{
-    transform: scale(1.1, 1.1);
-    transition: transform 0.2s ease-in-out;  
-
-}
-
-section > p{
-    background: rgba(255, 255, 255, 0.2); /* Fundo semi-transparente */
-  border-radius: 15px; /* Bordas arredondadas */
-  backdrop-filter: blur(10px); /* Desfoque para o efeito de vidro */
-  -webkit-backdrop-filter: blur(10px); /* Compatibilidade com navegadores baseados em WebKit */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
-  padding: 20px;
-  margin: 20px;
-  color: #fff; /* Cor do texto */
-    
-}
-img:hover{
-    transform: scale(1.1, 1.1);
-    transition: transform 0.2s ease-in-out;  
-
-}
-
-header > div{
-    width: fit-content;
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
