@@ -1,6 +1,7 @@
 /* Universal Selector */
 *{
-  color: rgba(0,255,0,0.8);
+  color: rgba(255,255,255,0.5);
+  text-align: center;
 }
 
 html{
@@ -11,7 +12,6 @@ html{
 body {
   height: 100vh;
   width: auto;
-  text-align: center;
   margin: 40px;
   padding: 20px;
   color: black;
@@ -35,7 +35,7 @@ footer {
 
 a {
   text-decoration: none;
-  color: yellowgreen
+  color: white;
 }
 
 
@@ -46,19 +46,16 @@ code {
   color: #00ff00;
 }
 
+ strong {
+   color: white;
+ }
+
 /* Classes */
 .pfp {
-  background: rgba(0, 0, 0, 0.4);    /* Semi-transparent background */
-  border-radius: 15px;                     /* Rounded corners */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Soft shadow */
-  padding: 20px;
-  margin: 20px;
-  border-color: rgba(0,255,0,0.2);
-  border-width: 2px;
-  border-spacing: 10px;
-  border-style: solid;
-  height: 165px;
+  margin: 15px;
+  height: 110px;
   animation: popup 1.25s ease-in-out forwards;
+  border-radius: 100%;
 }
 
 /* IDs */
@@ -68,10 +65,23 @@ code {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Soft shadow */
   padding: 20px;
   margin: 20px;
-  border-color: rgba(0,255,0,0.2);
+  border-color: rgba(127,127,127,0.2);
   border-width: 2px;
   border-spacing: 10px;
   border-style: solid;
+}
+
+#container{
+  background: rgba(0, 0, 0, 0.2);    /* Semi-transparent background */
+  border-radius: 15px;                     /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Soft shadow */
+  padding: 0;
+  margin: 0;
+  border-color: rgba(127,127,127,0.2);
+  border-width: 2px;
+  border-spacing: 10px;
+  border-style: solid;
+  animation: popup 2s ease-in-out forwards;
 }
 
 #about {
