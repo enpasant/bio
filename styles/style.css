@@ -1,6 +1,13 @@
+/* Font */
+@font-face{
+  font-family: 'Minecraft';
+  src: url("../images/Minecraft.woff");
+}
+
+
 /* Universal Selector */
 *{
-  color: rgba(255,255,255,0.5);
+  color: white;
   text-align: center;
 }
 
@@ -10,14 +17,12 @@ html{
 
 /* Elements */
 body {
-  height: 100vh;
+  height: auto;
   width: auto;
-  margin: 40px;
+  margin: 30px;
   padding: 20px;
-  color: black;
-  font-size: 1.1em;
-  font-weight: lighter;
-  font-family: monospace;
+  font-size: 0.9em;
+  font-family: 'Minecraft';
   background-image: url("../images/background.png");
   background-size: cover;
   background-attachment: fixed;
@@ -35,7 +40,7 @@ footer {
 
 a {
   text-decoration: none;
-  color: white;
+  color: yellow;
 }
 
 
@@ -47,21 +52,20 @@ code {
 }
 
  strong {
-   color: white;
+   color: orange;
  }
 
 /* Classes */
 .pfp {
   margin: 15px;
-  height: 110px;
+  height: 156px;
   animation: popup 1.25s ease-in-out forwards;
-  border-radius: 100%;
+  border-radius: 15px;
 }
 
 /* IDs */
 #text {
   background: rgba(0, 0, 0, 0.2);    /* Semi-transparent background */
-  border-radius: 15px;                     /* Rounded corners */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Soft shadow */
   padding: 20px;
   margin: 20px;
@@ -73,7 +77,6 @@ code {
 
 #container{
   background: rgba(0, 0, 0, 0.2);    /* Semi-transparent background */
-  border-radius: 15px;                     /* Rounded corners */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Soft shadow */
   padding: 0;
   margin: 0;
