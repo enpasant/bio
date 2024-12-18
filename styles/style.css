@@ -1,7 +1,7 @@
 /* Font */
 @font-face{
-  font-family: 'Minecraft';
-  src: url("../images/Minecraft.woff");
+  font-family: 'bif';
+  src: url("../images/font.ttf");
 }
 
 
@@ -22,7 +22,8 @@ body {
   margin: 30px;
   padding: 20px;
   font-size: 0.9em;
-  font-family: 'Minecraft';
+  font-family: 'bif';
+  background-position: center;
   background-image: url("../images/background.png");
   background-size: cover;
   background-attachment: fixed;
@@ -54,6 +55,10 @@ code {
  strong {
    color: orange;
  }
+
+yellow {
+  color: red;
+}
 
 /* Classes */
 .pfp {
