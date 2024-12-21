@@ -7,6 +7,10 @@
 
 /* Universal Selector */
 *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  animation: popup 1s ease-in-out forwards;
   color: white;
   text-align: center;
 }
@@ -21,13 +25,13 @@ body {
   width: auto;
   margin: 30px;
   padding: 20px;
-  font-size: 0.9em;
-  font-family: 'Montserrat';
+  font-size: 0.8em;
+  font-family: 'bif';
   background-position: center;
   background-image: url("../images/background.png");
   background-size: cover;
   background-attachment: fixed;
-  animation: popdown 1s ease-in-out forwards;
+  
 }
 
 footer {
@@ -41,7 +45,7 @@ footer {
 
 a {
   text-decoration: none;
-  color: gainsboro;
+  color: aquamarine;
 }
 
 
@@ -59,14 +63,23 @@ code {
  }
 
 yellow {
-  color: lightgray;
+  color: aquamarine;
+}
+
+button {
+  font-family: 'bif';
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  background: none;
+  color: rgba(0,0,0,0.2);
+  border: none;
 }
 
 /* Classes */
 .pfp {
   margin: 15px;
   height: 156px;
-  animation: popup 1.25s ease-in-out forwards;
   border-radius: 15px;
 }
 
@@ -77,7 +90,7 @@ yellow {
   padding: 20px;
   margin: 20px;
   border-color: rgba(127,127,127,0.2);
-  border-radius: 25px;
+  border-radius: 0px;
   border-width: 2px;
   border-spacing: 10px;
   border-style: solid;
@@ -89,62 +102,28 @@ yellow {
   padding: 0;
   margin: 0;
   border-color: rgba(127,127,127,0.2);
-  border-radius: 25px;
+  border-radius: 0px;
   border-width: 2px;
   border-spacing: 10px;
   border-style: solid;
-  animation: popup 2s ease-in-out forwards;
+  width: fit-content;
 }
 
-#about {
-  animation: popleft 1.5s ease-in-out forwards;
-}
-
-#nav {
-  animation: popright 2s ease-in-out forwards;
+#displayImage {
+  display: none;
+  margin-top: 20px;
+  border-radius: 10px;
+  margin: 0 auto;
 }
 
 /* Keyframes */
 @keyframes popup {
   from {
-    transform: translateY(100%);
+    transform: scale(0.5,0.5);
     opacity: 0;
   }
   to {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-@keyframes popdown {
-  from {
-    transform: translateY(-100%);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-@keyframes popright {
-  from {
-    transform: translateX(-100%);
-    opacity: 0;
-  }
-  to {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-
-@keyframes popleft {
-  from {
-    transform: translateX(100%);
-    opacity: 0;
-  }
-  to {
-    transform: translateX(0);
+    transform: scale(1,1);
     opacity: 1;
   }
 }
